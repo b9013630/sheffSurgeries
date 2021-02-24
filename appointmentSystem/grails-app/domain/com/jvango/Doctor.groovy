@@ -2,9 +2,9 @@ package com.jvango
 
 class Doctor {
 
-	String toString(){
+	/*String toString(){
 		return fullName
-	}
+	}*/
 
 	String fullName
 	String qualification
