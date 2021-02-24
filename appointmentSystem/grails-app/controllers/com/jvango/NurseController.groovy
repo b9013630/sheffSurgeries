@@ -2,5 +2,5 @@ package com.jvango
 
 class NurseController {
 
-    def index() { }
+    def scaffold = Nurse
 }
