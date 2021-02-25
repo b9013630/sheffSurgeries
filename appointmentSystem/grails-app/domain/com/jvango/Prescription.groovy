@@ -14,12 +14,12 @@ class Prescription {
 	Boolean patientPaying
 
     static constraints = {
-	pharmacyName blank:false, nullable:false
+	/*pharmacyName blank:false, nullable:false
 	prescripNumber blank:false, nullable:false, unique:True
 	medicine blank:false, nullable:false
 	totalCost blank:false, nullable:false
 	dateIssued blank:false, nullable:false
-	patientPaying blank:false, nullable:false
+	patientPaying blank:false, nullable:false*/
 
     }
 	static belongsTo = [patient:Patient]
