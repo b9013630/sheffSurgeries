@@ -2,5 +2,5 @@ package com.jvango
 
 class ReceptionistController {
 
-    def index() { }
+    def scaffold = Receptionist
 }
