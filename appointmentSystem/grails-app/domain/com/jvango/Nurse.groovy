@@ -10,12 +10,12 @@ class Nurse {
 
     static constraints = {
     
-    	/*nurseName blank:false, nullable:false
+    	nurseName blank:false, nullable:false
 	qualifications blank:false, nullable:false
 	nurseEmail blank:false, nullable:false
 	nurseOffice blank:false, nullable:false
-	nursePhone blank:false, nullable:false */
+	nursePhone blank:false, nullable:false
     }
     
-     	static belongsTo = [surgery:Surgery]
+     	//static belongsTo = [surgery:Surgery]
 }
