@@ -17,5 +17,5 @@ class Receptionist {
 	recepPhone blank:false, nullable:false
     }
     
-     	//static belongsTo = [surgery:Surgery]
+     	static belongsTo = [surgery:Surgery]
 }

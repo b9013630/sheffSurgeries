@@ -23,7 +23,7 @@ class Doctor {
 	bio widget:'textarea'
     }
     
-    	//static belongsTo = [surgery:Surgery]
+    	static belongsTo = [surgery:Surgery]
 
-	//static hasMany = [patients:Patient, appointments:Appointment]
+	static hasMany = [patients:Patient, appointments:Appointment, 			prescriptions:Prescription, nurses:Nurse]
 }

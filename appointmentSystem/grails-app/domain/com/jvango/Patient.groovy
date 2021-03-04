@@ -21,7 +21,7 @@ class Patient {
 	patientPhone blank:false, nullable:false
     }
     
-    	//static belongsTo = [surgery:Surgery, doctor:Doctor]
+    	static belongsTo = [appointment:Appointment]
 
-	//static hasMany = [appointments:Appointment, prescriptions:Prescription]
+	static hasMany = [prescriptions:Prescription, doctors:Doctor, surgeries:Surgery]
 }

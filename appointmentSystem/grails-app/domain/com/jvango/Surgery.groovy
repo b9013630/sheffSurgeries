@@ -20,8 +20,7 @@ class Surgery {
 	description blank:false, nullable:false, widget:'textarea'
 	openingTime blank:false, nullable:false
     }
-    //static hasMany = [doctors:Doctor, receptionists:Receptionist, patients:Patient, nurses:Nurse, appointments:Appointment]
-
-	//static belongsTo = [name:Surgery]
+    
+	static hasMany = [doctors:Doctor, receptionists:Receptionist, patients:Patient, nurses:Nurse, appointments:Appointment]
     
 }

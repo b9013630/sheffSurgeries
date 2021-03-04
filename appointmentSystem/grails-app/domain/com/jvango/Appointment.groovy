@@ -17,5 +17,5 @@ class Appointment {
 	roomNumber blank:false, nullable:false
     }
     
-     	//static belongsTo = [patient:Patient, surgery:Surgery, doctor:Doctor]
+     	static belongsTo = [patient:Patient, surgery:Surgery, doctor:Doctor]
 }
