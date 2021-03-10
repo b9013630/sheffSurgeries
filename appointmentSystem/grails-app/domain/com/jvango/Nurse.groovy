@@ -7,6 +7,11 @@ class Nurse {
 	String nurseEmail
 	String nurseOffice
 	String nursePhone
+	
+	String toString(){
+		return nurseName
+	}
+
 
     static constraints = {
     
