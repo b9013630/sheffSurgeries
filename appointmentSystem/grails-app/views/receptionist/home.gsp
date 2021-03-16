@@ -16,17 +16,15 @@
 <div id="content" role="main">
     <section class="row colset-2-its">
         <h1>Welcome to Sheffield Surgeries</h1>
-        
-        
 
         <p>
-            Welcome to Sheffield Surgeries. Please login.
-            Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+            Welcome. You are now logged in. The available controllers are below.
             
         </p>
+        
+        </section>
 
-
+<section class="row colset-2-its">
         <div id="controllers" role="navigation">
             <h2>Available Controllers:</h2>
             <ul>
@@ -37,7 +35,7 @@
                 </g:each>
             </ul>
         </div>
-    </section>
+     </section>
 </div>
 
 </body>
