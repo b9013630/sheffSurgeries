@@ -4,6 +4,7 @@ class ReceptionistController {
 
     def scaffold = Receptionist
     
+    
     def login(){
     
     }
@@ -12,19 +13,28 @@ class ReceptionistController {
     	
     def user = Receptionist.findByRecepUsername(params.username)
     	
-    if (user && user.recepPassword == params.password){
+	    if (user && user.recepPassword == params.password){
+	    	
+	    	session.user = user
+	    	render view:'home'
+	    	}
     	
-    	session.user = user
-    	render view:'home'
-    	}
-    	
-    else{flash.message = "Invalid username and password."
-    
-    render view:'login'}}
+	    else{
+	    	flash.message = "Invalid username and password."
+	    	render view:'login'
+	    	}
+	    };
     
 
-	def logout = {
+	def hi () {
+		
 	session.user = null
-	redirect(uri:'/')}
-	
+		
+	redirect(uri:'/')
+		}
+		
+		
+		
+		
+		
 }

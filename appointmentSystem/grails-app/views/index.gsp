@@ -20,14 +20,12 @@
         
 
         <p>
-            Welcome to Sheffield Surgeries. Please login.
-            Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+            ‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎  ‎‏‏‎ ‎‏‏‎ ‎‏‎‏‏‎ ‎Welcom‎e to Sheffield Surgeries. Please login to use this application. Thankyou.
             
         </p>
 
 
-        <div id="controllers" role="navigation">
+       <%--<div id="controllers" role="navigation">
             <h2>Available Controllers:</h2>
             <ul>
                 <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
@@ -36,7 +34,7 @@
                     </li>
                 </g:each>
             </ul>
-        </div>
+        </div> --%>
     </section>
 </div>
 

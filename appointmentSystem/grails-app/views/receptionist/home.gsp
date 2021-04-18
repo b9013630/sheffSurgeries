@@ -28,12 +28,32 @@
         <div id="controllers" role="navigation">
             <h2>Available Controllers:</h2>
             <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+                <%-- <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
                     <li class="controller">
                         <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
                     </li>
                 </g:each>
-            </ul>
+            </ul> --%>
+            
+        <button type="button" class="btn">
+	<g:link controller="patient" action="create">Add patient</g:link>
+	</button>
+</br>
+</br>
+        <button type="button" class="btn">
+	<g:link controller="doctor" action="create">Add doctor</g:link>
+	</button>	
+</br>
+</br>
+        <button type="button" class="btn">
+	<g:link controller="nurse" action="create">Add nurse</g:link>
+	</button> 
+</br>
+</br>
+        <button type="button" class="btn">
+	<g:link controller="receptionist" action="create">Add receptionist</g:link>
+	</button>
+           
         </div>
      </section>
 </div>
