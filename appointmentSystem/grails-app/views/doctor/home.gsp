@@ -26,10 +26,14 @@
 
 <section class="row colset-2-its">
         <div id="controllers" role="navigation">
-            <p>Available Controllers:</p>
+            <p>Available Functions:</p>
             <ul>
-               
             
+	<button type="button" class="btn">
+	<g:link controller="doctor" action="search">Search for prescription</g:link>
+	</button> 
+</br>
+</br>        
         <button type="button" class="btn">
 	<g:link controller="prescription" action="create">Create prescription</g:link>
 	</button>

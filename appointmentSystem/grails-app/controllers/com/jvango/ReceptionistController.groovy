@@ -33,7 +33,24 @@ class ReceptionistController {
 	redirect(uri:'/')
 		}
 		
+	def search(){
 		
+	} 
+
+   	def results(String name){
+
+   		def patients=Patient.where{
+   		
+   		(patientName=~name) || (patientID=~name) || (patientResidence=~name)
+   		
+   		}.list()
+
+   		return [patients:patients,
+
+   			term:params.patient,
+
+   			totalPatients: Patient.count()]
+	}
 		
 		
 		

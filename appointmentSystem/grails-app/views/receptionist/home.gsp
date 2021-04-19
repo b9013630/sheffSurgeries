@@ -23,17 +23,18 @@
         </h2>
         
         </section>
+        
 
 <section class="row colset-2-its">
         <div id="controllers" role="navigation">
-            <p>Available Controllers:</p>
-            <ul>
-                <%-- <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
-                </g:each>
-            </ul> --%>
+            <p>Available functions:</p>
+            
+        <button type="button" class="btn">
+	<g:link controller="receptionist" action="search">Search for patient</g:link>
+	</button>   
+	
+</br>
+</br>
             
         <button type="button" class="btn">
 	<g:link controller="patient" action="create">Add patient</g:link>

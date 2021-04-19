@@ -34,6 +34,25 @@ class DoctorController {
 	redirect(uri:'/')
 	}
 	
+	def search(){
+		
+	} 
+
+   	def results(String name){
+
+   		def prescriptions=Prescription.where{
+   		
+   		(medicine=~name) || (totalCost=~name)
+   		
+   		}.list()
+
+   		return [prescriptions:prescriptions,
+
+   			term:params.prescription,
+
+   			totalPrescriptions:Prescription.count()]
+	}
+	
 }
 	
 	
