@@ -5,7 +5,7 @@
     <title>Sheffield Surgeries</title>
 </head>
 <body>
-<g:loginToggle />
+<g:doctorLoginToggle />
 
 <div class="svg" role="presentation">
     <div class="grails-logo-container">
@@ -28,30 +28,20 @@
         <div id="controllers" role="navigation">
             <p>Available Controllers:</p>
             <ul>
-                <%-- <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
-                </g:each>
-            </ul> --%>
+               
             
         <button type="button" class="btn">
-	<g:link controller="patient" action="create">Add patient</g:link>
+	<g:link controller="prescription" action="create">Create prescription</g:link>
 	</button>
 </br>
 </br>
         <button type="button" class="btn">
-	<g:link controller="doctor" action="create">Add doctor</g:link>
-	</button>	
+	<g:link controller="prescription" action="index">Show prescriptions</g:link>
+	</button>	         
 </br>
 </br>
         <button type="button" class="btn">
-	<g:link controller="nurse" action="create">Add nurse</g:link>
-	</button> 
-</br>
-</br>
-        <button type="button" class="btn">
-	<g:link controller="receptionist" action="create">Add receptionist</g:link>
+	<g:link controller="appointments" >Show appointments</g:link>
 	</button>
            
         </div>

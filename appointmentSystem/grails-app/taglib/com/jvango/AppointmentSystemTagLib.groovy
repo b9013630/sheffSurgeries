@@ -5,9 +5,9 @@ class appointmentSystemTagLib {
     //static encodeAsForTags = [tagName: [taglib:'html'], otherTagName: [taglib:'none']]
     
 def loginToggle = {
+
     	out << "<div style='margin: 15px 0 40px;'>"
-    	
-    if (request.getSession(false) && session.user){
+    	if (request.getSession(false) && session.user){
     
     	out << "<span style='float:left; margin-left: 15px'>"
     	
@@ -15,7 +15,7 @@ def loginToggle = {
     	
     	out << "</span><span style='float:right;margin-right:15px'>"
     	
-    	out << "<a href='${createLink(controller:'receptionist', action:'hi')}'>"
+    	out << "<a href='${createLink(controller:'receptionist', action:'logout')}'>"
     	
     	out << "Logout </a></span>"}
     	
@@ -24,8 +24,35 @@ def loginToggle = {
     	
     	out << "<a href='${createLink(controller:'receptionist', action:'login')}'>"
     	
-    	out << "Login </a></span>"
+    	out << "Receptionist Login </a></span>"
     	}
     	out << "</div></br>"
     	}
+    	
+    	
+    def doctorLoginToggle = {
+   
+		out << "<div style='margin: 15px 0 40px;'>"
+		if (request.getSession(false) && session.user){
+		
+		out << "<span style='float:left; margin-left:15px'>"
+
+		out << "Welcome ${session.user}."
+
+		out << "</span><span style ='float:right; margin-right:15px'>"
+
+		out << "<a href='${createLink(controller:'doctor', action:'logout')}'>"
+
+		out << "Logout </a></span>"
+
+		}else{
+
+		out << "<a href='${createLink(controller:'doctor', action:'login')}'>"
+
+		out << "Doctor Login</a>"
+		}
+		out << "</div></br>"
+	}
+    	   	
+    	
 }

@@ -26,7 +26,7 @@ class ReceptionistController {
 	    };
     
 
-	def hi () {
+	def logout () {
 		
 	session.user = null
 		

@@ -14,27 +14,25 @@
 </div>
 
 <div id="content" role="main">
-    <section class="row colset-2-its">
+    <section class="row colset-4-its">
+    
         <h1>Welcome to Sheffield Surgeries</h1>
         
-        
-
-        <p>
-            ‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎  ‎‏‏‎ ‎‏‏‎ ‎‏‎‏‏‎ ‎Welcom‎e to Sheffield Surgeries. Please login to use this application. Thankyou.
-            
-        </p>
-
-
-       <%--<div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
-            <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
-                </g:each>
-            </ul>
-        </div> --%>
+   	 <div class="welcomeText">
+        	<h3>‎Welcom‎e to Sheffield Surgeries. Please login to use this application. Thankyou.</h3>
+	</div>
+<table>
+	<tr>
+	    <td><g:doctorLoginToggle/></td>
+	    <td><g:loginToggle/> </td>
+  	</tr>
+</table>
+	
+	
+  	
+  	
+	
+     
     </section>
 </div>
 
